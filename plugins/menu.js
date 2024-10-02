@@ -7,22 +7,12 @@ const pdfUrl = 'https://i.ibb.co/2PLgSdj/Picsart-24-09-16-17-49-35-655.jpg';
 cmd({
     pattern: "menu",
     desc: "To get the menu.",
-    react: "📜",
+    react: "🎬",
     category: "main",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-
-let menu = {
-download: ''
-};
-
-for (let i = 0; i < commands.length; i++) {
-if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `*° :* ${commands[i].pattern} || ${commands[i].desc}\n`;
- }
-}
 
 let menumsg = `
 👋 Hellow.! *${pushname}* ,
@@ -33,17 +23,30 @@ let menumsg = `
 > *ʀᴜɴ ᴛɪᴍᴇ* : ${runtime(process.uptime())}
 
 ╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-│🎬 SUBTITLE-DL-SITES 🎬
+*│🎬 SUBTITLE-DL-SITES 🎬*
+│╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+│
+│► cine _[ cinerulk ]_
+│► baiscope _[ baiscopelk ]_
+│► zoom _[ zoomlk ]_
+│► pirate _[ piratelk ]_
+│► subz _[ subz ]_
+│
+│╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+*│🎬 MV-DL-SITES 🎬*
+│╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+│
+│► cinez _[ cinesubz ]_
+│► sinsub _[ sinhalasub ]_
+│► mx _[ ytsmx ]_
+│
+│╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+*│🎬 CARTOON-DL-SITES 🎬*
+│╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+│
+│► ginisisila _[ ginisisilacartoon ]_
+│
 ╰╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-${menu.download}
-╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-│🎬 MV-DL-SITES 🎬
-╰╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-${menu.download}
-╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-│🎬 CARTOON-DL-SITES 🎬
-╰╼╼╼╼╼╼╼╼╼╼╼╼╼╼
-${menu.download}
 `
 // Send the initial message and store the message ID
 const sentMsg = await conn.sendMessage(from, {
