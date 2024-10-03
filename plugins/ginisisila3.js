@@ -4,7 +4,7 @@ const { cmd } = require('../command');
 
 // Command handler for searching cartoons
 cmd({
-    pattern: "ginisisila",
+    pattern: "g3",
     react: '📑',
     category: "download",
     desc: "Scrape cartoon episodes",
