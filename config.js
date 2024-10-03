@@ -6,12 +6,12 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 // Put Your Session Id Here
-SESSION_ID: process.env.SESSION_ID || "fdsXUZ4B#3kQqMUKlhufsaEwkT8QWPiVYyjAyD4iMRquJuLqw0DY",
-OWNER_NUMBER: '94760059126@s.whatsapp.net',
+SESSION_ID: process.env.SESSION_ID || "Ji0WGJDB#DBroX7MJG9q07RzC3IudS5LMurmTjQzGPqIcoLztYjs",
+OWNER_NUMBER: '94754769944@s.whatsapp.net',
 ALIVE_IMG: process.env.ALIVE_IMG || "https://i.postimg.cc/xdhMJy1b/Screenshot-20240830-004711-Pixel-Lab.jpg",
 ALIVE_MSG: process.env.ALIVE_IMG || "🤖🔰 Hi QUEEN-KYLIE-MD Is Online Now 💻\n*💻 Owner* - QUEEN-KYLIE-MD\n\n*💻 Owner Number* -94760059126\n\n_විධාන මෙනුව ලබා ගැනීමට .menu ලෙස ටයිප් කරන්න._",
 //Add Your Own Sudo Number
-SUDO_NB: process.env.SUDO_NB || "94760059126",
+SUDO_NB: process.env.SUDO_NB || "94754769944",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 //Edit Bot Mode Private Or Public
 MODE: process.env.MODE || "public",
